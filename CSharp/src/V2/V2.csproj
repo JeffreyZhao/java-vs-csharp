@@ -35,7 +35,11 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
+    <Reference Include="Wintellect.Threading">
+      <HintPath>..\..\lib\PowerThreading\Wintellect.Threading.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\Person.cs" />
@@ -44,8 +48,16 @@
     <Compile Include="Attributes\Usage.cs" />
     <Compile Include="Attributes\ValidationAttribute.cs" />
     <Compile Include="Attributes\ValidatorAttribute.cs" />
+    <Compile Include="Closures\CacheHelper.cs" />
+    <Compile Include="Closures\Delegates.cs" />
+    <Compile Include="Closures\Lazy.cs" />
+    <Compile Include="Closures\Parallel.cs" />
+    <Compile Include="Generics\CachedFactory.cs" />
+    <Compile Include="Generics\Retriever.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Yields\WebAsyncTransfer.cs" />
+    <Compile Include="Yields\FibonacciGenerator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
