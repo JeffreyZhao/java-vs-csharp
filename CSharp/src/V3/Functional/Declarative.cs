@@ -7,7 +7,7 @@ namespace V3.Functional
 {
     public static class Declarative
     {
-        public static Dictionary<char, List<string>> CreateIndex(IEnumerable<string> keywords)
+        public static Dictionary<char, List<string>> CreateIndexImperatively(IEnumerable<string> keywords)
         {
             // define an Dictionary
             var result = new Dictionary<char, List<string>>();
@@ -36,7 +36,7 @@ namespace V3.Functional
             return result;
         }
 
-        public static Dictionary<char, List<string>> CreateIndexByLambda(IEnumerable<string> keywords)
+        public static Dictionary<char, List<string>> CreateIndex(IEnumerable<string> keywords)
         {
             return keywords
                 .GroupBy(k => k[0])
@@ -45,7 +45,7 @@ namespace V3.Functional
                     g => g.OrderBy(k => k).ToList());
         }
 
-        static List<int> GetSquaresOfEven(List<string> strList)
+        static List<int> GetSquaresOfEvenImperatively(List<string> strList)
         {
             List<int> intList = new List<int>();
             foreach (var s in strList) intList.Add(Int32.Parse(s));
@@ -63,7 +63,7 @@ namespace V3.Functional
             return squareList;
         }
 
-        static List<int> GetSquaresOfEvenByLambda(List<string> strList)
+        static List<int> GetSquaresOfEven(List<string> strList)
         {
             return strList
                 .Select(s => Int32.Parse(s)) // parse to int
