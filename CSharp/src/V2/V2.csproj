@@ -38,6 +38,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\Person.cs" />
+    <Compile Include="Attributes\RangeAttribute.cs" />
+    <Compile Include="Attributes\RegexAttribute.cs" />
+    <Compile Include="Attributes\Usage.cs" />
+    <Compile Include="Attributes\ValidationAttribute.cs" />
+    <Compile Include="Attributes\ValidatorAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,8 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D1B183A3-F440-4773-AF75-924491ED635F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V2", "src\V2\V2.csproj", "{B2CC0CB5-7422-41D3-BEE8-736864549F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V3", "src\V3\V3.csproj", "{6CCB5305-5A25-49C4-BC2D-FB5463057D0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V4", "src\V4\V4.csproj", "{EDFF9880-B3B2-4ABC-AA21-A8E3CAFD1A35}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2CC0CB5-7422-41D3-BEE8-736864549F74}.Debug|x86.ActiveCfg = Debug|x86
+		{B2CC0CB5-7422-41D3-BEE8-736864549F74}.Debug|x86.Build.0 = Debug|x86
+		{B2CC0CB5-7422-41D3-BEE8-736864549F74}.Release|x86.ActiveCfg = Release|x86
+		{B2CC0CB5-7422-41D3-BEE8-736864549F74}.Release|x86.Build.0 = Release|x86
+		{6CCB5305-5A25-49C4-BC2D-FB5463057D0F}.Debug|x86.ActiveCfg = Debug|x86
+		{6CCB5305-5A25-49C4-BC2D-FB5463057D0F}.Debug|x86.Build.0 = Debug|x86
+		{6CCB5305-5A25-49C4-BC2D-FB5463057D0F}.Release|x86.ActiveCfg = Release|x86
+		{6CCB5305-5A25-49C4-BC2D-FB5463057D0F}.Release|x86.Build.0 = Release|x86
+		{EDFF9880-B3B2-4ABC-AA21-A8E3CAFD1A35}.Debug|x86.ActiveCfg = Debug|x86
+		{EDFF9880-B3B2-4ABC-AA21-A8E3CAFD1A35}.Debug|x86.Build.0 = Debug|x86
+		{EDFF9880-B3B2-4ABC-AA21-A8E3CAFD1A35}.Release|x86.ActiveCfg = Release|x86
+		{EDFF9880-B3B2-4ABC-AA21-A8E3CAFD1A35}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2CC0CB5-7422-41D3-BEE8-736864549F74} = {D1B183A3-F440-4773-AF75-924491ED635F}
+		{6CCB5305-5A25-49C4-BC2D-FB5463057D0F} = {D1B183A3-F440-4773-AF75-924491ED635F}
+		{EDFF9880-B3B2-4ABC-AA21-A8E3CAFD1A35} = {D1B183A3-F440-4773-AF75-924491ED635F}
 	EndGlobalSection
 EndGlobal
