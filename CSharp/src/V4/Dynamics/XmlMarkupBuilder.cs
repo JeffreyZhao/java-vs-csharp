@@ -5,7 +5,7 @@ using System.Text;
 using System.Dynamic;
 using System.Xml.Linq;
 
-namespace V4
+namespace V4.Dynamics
 {
     public class XmlMarkupBuilder : DynamicObject
     {
