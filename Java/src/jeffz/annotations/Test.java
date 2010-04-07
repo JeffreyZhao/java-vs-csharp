@@ -29,5 +29,7 @@ public class Test {
 				return null;
 			}
 		};
+		
+		// pass to some other methods for test
 	}	
 }

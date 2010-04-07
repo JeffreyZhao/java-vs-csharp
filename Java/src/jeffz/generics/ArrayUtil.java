@@ -4,9 +4,10 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 public class ArrayUtil {
+
+	// you can't do this
 	public static <T> T[] convert(List<T> list) {
-		// you can't do this
-		// return new T();
+		// T[] array = new T[list.size()];
 		return null;
 	}
 	
@@ -22,6 +23,11 @@ public class ArrayUtil {
 	
 	public void main(String[] args) {
 		List<Integer> list = new ArrayList<Integer>();
-		Integer[] array = ArrayUtil.convert(list, Integer.class);
+		
+		// we cannot do this
+		Integer[] array1 = ArrayUtil.convert(list);
+		
+		// we have to do this
+		Integer[] array2 = ArrayUtil.convert(list, Integer.class);
 	}
 }
