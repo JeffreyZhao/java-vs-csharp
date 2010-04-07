@@ -145,6 +145,8 @@ namespace V2.Yields
                     yield return 1;
                     int lengthRead = streamIn.EndRead(ae.DequeueAsyncResult());
 
+                    if (lengthRead <= 0) break;
+
                     streamOut.BeginWrite(buffer, 0, lengthRead, ae.End(), null);
                     yield return 1;
                     streamOut.EndWrite(ae.DequeueAsyncResult());
